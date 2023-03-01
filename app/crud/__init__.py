@@ -1,3 +1,3 @@
-from .base import CRUDBase
-from .charity_project import CRUDCharityProject
-from .donation import CRUDDonation
+from .base import CRUDBase # noqa
+from .charity_project import CRUDCharityProject # noqa
+from .donation import CRUDDonation # noqa

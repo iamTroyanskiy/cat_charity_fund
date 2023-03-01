@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional
 
-from pydantic import PositiveInt, NonNegativeInt, Field
+from pydantic import PositiveInt, NonNegativeInt
 
 from app.schemas.base import BaseSchema
 

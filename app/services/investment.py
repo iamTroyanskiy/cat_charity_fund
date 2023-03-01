@@ -9,7 +9,7 @@ from app.models import CharityProject, Donation
 
 def close_obj(
         current_obj,
-        list_objs:list,
+        list_objs: list,
 ) -> None:
     current_obj.invested_amount = current_obj.full_amount
     current_obj.fully_invested = True
@@ -35,10 +35,10 @@ async def run_investment_process(
         project: CharityProject = no_fully_projects[0]
         donation: Donation = no_fully_donations[0]
         project_left_to_full = (
-                project.full_amount - project.invested_amount
+            project.full_amount - project.invested_amount
         )
         donation_left_to_full = (
-                donation.full_amount - donation.invested_amount
+            donation.full_amount - donation.invested_amount
         )
         if project_left_to_full > donation_left_to_full:
             project.invested_amount += donation_left_to_full

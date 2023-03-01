@@ -25,7 +25,7 @@ class CharityProjectUpdate(CharityProjectBase):
     @validator('*')
     def fields_cannot_be_null(cls, value):
         if not value:
-            raise ValueError(f'Поля в запросе не могут быть пустыми!')
+            raise ValueError('Поля в запросе не могут быть пустыми!')
         return value
 
 

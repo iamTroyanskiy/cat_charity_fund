@@ -42,7 +42,7 @@ class CRUDBase:
     ):
         no_full_invested_objs = await session.execute(
             select(self.model).where(
-                self.model.fully_invested == False
+                self.model.fully_invested == False # noqa
             ).order_by(
                 self.model.create_date
             )

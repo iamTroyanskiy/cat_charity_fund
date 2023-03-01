@@ -12,5 +12,3 @@ class Donation(InvestedBase):
             f'Пожертование №{self.id}. '
             f'Полностью потрачено: {self.fully_invested}'
         )
-
-

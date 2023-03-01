@@ -1,6 +1,4 @@
-from typing import Optional
-
-from pydantic import BaseModel, Extra, PositiveInt
+from pydantic import BaseModel, Extra
 
 
 class BaseSchema(BaseModel):
