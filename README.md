@@ -5,7 +5,12 @@
 [![Pydantic](https://img.shields.io/badge/-Pydantic-464646?style=flat&logo=Pydantic&logoColor=ffffff&color=043A6B)](https://pypi.org/project/pydantic/)
 [![Asyncio](https://img.shields.io/badge/-Asyncio-464646?style=flat&logo=Asyncio&logoColor=ffffff&color=043A6B)](https://docs.python.org/3/library/asyncio.html)
 
-# QRkot | Сat сharity fund
+<h1 align="center">
+  <br>
+  <img src="https://github.com/tonik350/img/blob/main/qr.png?raw=true" width="500"></a>
+</h1>
+
+# QRkot | API Благотворительного фонда поддержки котиков
 
 ## Описание
 
