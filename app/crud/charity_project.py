@@ -1,3 +1,4 @@
+from datetime import datetime
 from typing import Optional
 
 from sqlalchemy import select
@@ -16,6 +17,12 @@ class CRUDCharityProject(CRUDBase):
             session: AsyncSession,
     ):
         update_data = charity_project_in.dict(exclude_unset=True)
+        if (
+            'full_amount' in update_data and
+            update_data['full_amount'] == charity_project_obj.invested_amount
+        ):
+            update_data['fully_invested'] = True
+            update_data['close_data'] = datetime.utcnow()
         for field in update_data:
             setattr(charity_project_obj, field, update_data[field])
         session.add(charity_project_obj)
